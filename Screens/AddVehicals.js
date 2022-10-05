@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   input:{
     marginTop: '95%',
-    marginLeft: '8%',
+    marginLeft: '9%',
     borderWidth: 1,
     marginRight: '56%',
     padding: 10,
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   input2:{
     marginTop: '5%',
-    marginLeft: '8%',
+    marginLeft: '9%',
     borderWidth: 1,
     marginRight: '56%',
     padding: 10,
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   input3:{
     marginTop: '5%',
-    marginLeft: '8%',
+    marginLeft: '9%',
     borderWidth: 1,
     marginRight: '56%',
     padding: 10,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   input4:{
     marginTop: '5%',
-    marginLeft: '8%',
+    marginLeft: '96%',
     borderWidth: 1,
     marginRight: '56%',
     padding: 10,
@@ -87,11 +87,12 @@ const styles = StyleSheet.create({
     zIndex:2
   },
   input5:{
-    marginTop: '-63%',
+    marginTop: '-44%',
+    marginLeft: '74%',
     borderWidth: 1,
     marginLeft: '40%',
     padding: 10,
-    width: '45%',
+    width: '42%',
     borderRadius: 10,
     backgroundColor:'#ffffff',
     zIndex:2
