@@ -16,12 +16,6 @@ import {
       <View style={styles.container}>
                  <Text  style={{color: '#f6c708', fontSize: 50,  position:'absolute',top:100}}> <b><i>Sign up</i></b></Text>
 
-                 <View style={styles.cercle}></View>
-  <View style={styles.rectangle}></View>
-  {/* <Image
-  source={require("../assets/car.png")}
-  style={{ width: 460, height: 460 ,position:'absolute',left:-60,top:70,rotate: '10deg'}}/>
-     */}
 
         <TextInput
           placeholderTextColor="black"
@@ -48,7 +42,7 @@ import {
         <Text style={{color: 'black'}}><b>Login</b></Text>
       </TouchableOpacity>
       <TouchableOpacity>
-              <Text style={styles.signupbtn}><b>Sign Up</b></Text>
+              <Text style={styles.signupbtns}><b>Sign Up</b></Text>
       </TouchableOpacity>
 
       <Text  style={{color: '#ffffff',  position:'absolute',top:520,textAlign:'center'}}>
@@ -141,7 +135,7 @@ import {
        
        
       },
-      signupbtn:{
+      signupbtns:{
         padding: 8,
         backgroundColor: '#93adb6',
         height: 38.1,

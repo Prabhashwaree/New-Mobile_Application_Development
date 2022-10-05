@@ -8,8 +8,8 @@ import Login from './screens/Login'
 export default function App() {
   return (
     <NativeBaseProvider>
-          <Signup></Signup>
-          {/* <AddVehicals></AddVehicals> */}
+          {/* <Signup></Signup> */}
+          <AddVehicals></AddVehicals>
           {/* <Login></Login> */}
     </NativeBaseProvider>
   );

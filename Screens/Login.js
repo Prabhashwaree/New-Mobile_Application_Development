@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
         
-      <Text  style={{color: 'black', fontSize: 50,  position:'absolute',top:70}}> <b><i>Login</i></b></Text>
+      <Text  style={{color: '#181718', fontSize: 50,  position:'absolute',top:70}}> <b><i>Login</i></b></Text>
       
      
   <View style={styles.cercle}></View>
@@ -56,8 +56,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height:860,
-    backgroundColor:'#ffffff'
-    // width:'100vw',
+    backgroundColor:'#f6c708',
+    textAlign:'center'
+    // width:'100%',
+    
   },
   btn: {
     width: '60%',
@@ -86,7 +88,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 100,
     borderTopLeftRadius: 100,
     color: 'black',
-    marginTop: '354%',
+    marginTop: '341%',
     marginLeft: '-45%',
     textAlign:'center',
     // fontSize: 20
