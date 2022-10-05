@@ -9,8 +9,8 @@ export default function App() {
   return (
     <NativeBaseProvider>
           {/* <Signup></Signup> */}
-          <AddVehicals></AddVehicals>
-          {/* <Login></Login> */}
+          {/* <AddVehicals></AddVehicals> */}
+          <Login></Login>
     </NativeBaseProvider>
   );
 }

@@ -11,14 +11,13 @@ export default function Login() {
 
       
   
-      <TextInput placeholderTextColor="black" style={styles.input} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
-      <TextInput placeholderTextColor="black" style={styles.input3} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input4} placeholder="Password" />
-      <TextInput placeholderTextColor="black" style={styles.input5} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input6} placeholder="Password" />
-      <TextInput placeholderTextColor="black" style={styles.input7} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input8} placeholder="Password" />
+      <TextInput placeholderTextColor="black" style={styles.input} placeholder="Register No" />
+      <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Brand" />
+      <TextInput placeholderTextColor="black" style={styles.input3} placeholder="Price" />
+      <TextInput placeholderTextColor="black" style={styles.input4} placeholder="Fuel Type" />
+      <TextInput placeholderTextColor="black" style={styles.input5} placeholder="Date" />
+      <TextInput placeholderTextColor="black" style={styles.input6} placeholder="Location" />
+      
       <TouchableOpacity style={styles.btn}>
         <Text style={{color: '#ffffff', fontSize: 20}}> Save</Text>
       </TouchableOpacity>
@@ -88,22 +87,7 @@ const styles = StyleSheet.create({
     width: '50%',
     borderRadius: 10,
   },
-  input7:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginLeft: '40%',
-    padding: 10,
-    width: '50%',
-    borderRadius: 10,
-  },
-  input8:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginLeft: '40%',
-    padding: 10,
-    width: '50%',
-    borderRadius: 10,
-  },
+  
   btn:{
     padding: 5,
     backgroundColor: 'green',

@@ -1,13 +1,14 @@
 /* eslint-disable prettier/prettier */
 // eslint-disable-next-line prettier/prettier
-import { View, Text,TextInput,Button,StyleSheet, TouchableOpacity,} from 'react-native';
+import { View, Text,TextInput,Button,StyleSheet, TouchableOpacity,Image} from 'react-native';
 import React from 'react';
 
 
 export default function Login() {
   return (
     <View style={styles.container}>
-      <Text  style={{color: 'black', fontSize: 50,  marginTop: '-34%'}}> Login</Text>
+        
+      <Text  style={{color: 'black', fontSize: 50,  marginTop: '-55%'}}> <b>Login</b></Text>
       <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
       <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
       <TouchableOpacity style={styles.btn}>
@@ -16,6 +17,12 @@ export default function Login() {
       <TouchableOpacity>
               <Text style={styles.signupText}>Sign Up</Text>
       </TouchableOpacity>
+     
+  <View style={styles.cercle}></View>
+  <View style={styles.rectangle}></View>
+  <Image
+  source={require("../assets/car.png")}
+  style={{ width: 400, height: 400 ,position:'absolute',left:10,top:120,rotate: '10deg'}}/>
     </View>
   );
 }
@@ -56,6 +63,21 @@ const styles = StyleSheet.create({
   signupText:{
     color: 'black',
     fontSize: 20, 
-    marginTop: '14%'
+    marginTop: '14%',
+  },
+  cercle:{
+    width:'100%',
+    height:'40%',
+    backgroundColor:'#181718',
+    borderRadius:'50%',
+    position:'absolute',
+    top:'30%',
+  },
+  rectangle:{
+    width:'109%',
+    height:'40%',
+    backgroundColor:'#181718',
+    position:'absolute',
+    top:'40.5%',
   }
 });
