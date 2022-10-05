@@ -20,10 +20,10 @@ export default function Login() {
     <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
       <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
       <TouchableOpacity style={styles.btn}>
-        <Text style={{color: '#ffffff', fontSize: 20}}> Login</Text>
+        <Text style={{color: 'black'}}><b>Login</b></Text>
       </TouchableOpacity>
       <TouchableOpacity>
-              <Text style={styles.signupText}>Sign Up</Text>
+              <Text style={styles.signupbtn}><b>Sign Up</b></Text>
       </TouchableOpacity>
     </View>
   );
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     zIndex:2,
     backgroundColor:'#ffffff',
     position:'absolute',
-    top:'36%',
+    top:'38%',
   },
   input2: {
     marginTop: '5%',
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     zIndex:2,
     backgroundColor:'#ffffff',
     position:'absolute',
-    top:'55%',
+    top:'57%',
   },
   container: {
     justifyContent: 'center',
@@ -61,21 +61,35 @@ const styles = StyleSheet.create({
   },
   btn: {
     width: '60%',
-    padding: 5,
-    backgroundColor: 'green',
-    height: 60,
-    width :300,
+    padding: 4,
+    backgroundColor: '#f6c708',
+    height: 38.1,
+    width :99,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '10%',
-    borderRadius: 100,
+    marginTop: '20%',
+    borderBottomRightRadius: 100,
+    borderTopRightRadius: 100,
     position:'absolute',
-    top:'55%',
-  },
-  signupText:{
+    top:'59.1%',
+    left:'50%',
     color: 'black',
-    fontSize: 20, 
-    marginTop: '14%',
+   
+  },
+  signupbtn:{
+    padding: 8,
+    backgroundColor: '#93adb6',
+    height: 38.1,
+    width :99,
+    alignItems: 'center',
+    // justifyContent: 'center',
+    borderBottomLeftRadius: 100,
+    borderTopLeftRadius: 100,
+    color: 'black',
+    marginTop: '354%',
+    marginLeft: '-45%',
+    textAlign:'center',
+    // fontSize: 20
   },
   cercle:{
     width:'100%',
