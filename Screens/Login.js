@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
         
-      <Text  style={{color: 'black', fontSize: 50,  position:'absolute',top:70}}> <b>Login</b></Text>
+      <Text  style={{color: 'black', fontSize: 50,  position:'absolute',top:70}}> <b><i>Login</i></b></Text>
       
      
   <View style={styles.cercle}></View>

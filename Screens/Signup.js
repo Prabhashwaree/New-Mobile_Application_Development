@@ -7,13 +7,22 @@ import {
     Button,
     StyleSheet,
     TouchableOpacity,
+    Image,
   } from 'react-native';
   import React from 'react';
   
   export default function Signup() {
     return (
       <View style={styles.container}>
-                 <Text  style={{color: 'black', fontSize: 50,  marginTop: '-44%'}}> Sign up</Text>
+                 <Text  style={{color: '#f6c708', fontSize: 50,  position:'absolute',top:100}}> <b><i>Sign up</i></b></Text>
+
+                 <View style={styles.cercle}></View>
+  <View style={styles.rectangle}></View>
+  {/* <Image
+  source={require("../assets/car.png")}
+  style={{ width: 460, height: 460 ,position:'absolute',left:-60,top:70,rotate: '10deg'}}/>
+     */}
+
         <TextInput
           placeholderTextColor="black"
           style={styles.input1}
@@ -35,9 +44,16 @@ import {
           placeholder="Address"
         />
   
-        <TouchableOpacity style={styles.btn}>
-          <Text style={{color: '#fffff', fontSize: 20}}>Sign Up</Text>
-        </TouchableOpacity>
+  <TouchableOpacity style={styles.btn}>
+        <Text style={{color: 'black'}}><b>Login</b></Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+              <Text style={styles.signupbtn}><b>Sign Up</b></Text>
+      </TouchableOpacity>
+
+      <Text  style={{color: '#ffffff',  position:'absolute',top:520,textAlign:'center'}}>
+         <b><i>Enter the Correct Information and <br />Create Your Account </i></b></Text>
+      
       </View>
     );
   }
@@ -47,37 +63,40 @@ import {
       justifyContent: 'center',
       alignItems: 'center',
       height: 900,
-      backgroundColor: '#ffffff',
+      backgroundColor: '#181718',
     },
     input1: {
-      marginTop: '25%',
+      marginTop: '50%',
       borderWidth: 1,
       padding: 10,
       width: '80%',
       color: '#000000',
-  
+      backgroundColor:'#ffffff',
       borderRadius: 10,
     },
     input2: {
-      marginTop: '5%',
+      marginTop: '8%',
       borderWidth: 1,
       padding: 10,
       width: '80%',
       borderRadius: 10,
+      backgroundColor:'#ffffff',
     },
     input3: {
-      marginTop: '5%',
+      marginTop: '8%',
       borderWidth: 1,
       padding: 10,
       width: '80%',
       borderRadius: 10,
+      backgroundColor:'#ffffff',
     },
     input4: {
-      marginTop: '5%',
+      marginTop: '8%',
       borderWidth: 1,
       padding: 10,
       width: '80%',
       borderRadius: 10,
+      backgroundColor:'#ffffff',
     },
     btn: {
       width: '80%',
@@ -89,5 +108,54 @@ import {
       marginTop: '10%',
       borderRadius: 100,
     },
+    // cercle:{
+    //     width:'100%',
+    //     height:'100%',
+    //     backgroundColor:'#181718',
+    //     // borderRadius:'50%',
+    //     position:'absolute',
+    //     top:'0',
+    //     rotate: '20deg'
+    //   },
+    //   rectangle:{
+    //     width:'109%',
+    //     height:'40%',
+    //     backgroundColor:'#181718',
+    //     position:'absolute',
+    //     top:'40.5%',
+    //   }, 
+      
+      btn: {
+        padding: 4,
+        backgroundColor: '#f6c708',
+        height: 38.1,
+        width :239,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '20%',
+       borderRadius:100,
+        position:'absolute',
+        top:'56%',
+        left:'20%',
+        color: 'black',
+       
+       
+      },
+      signupbtn:{
+        padding: 8,
+        backgroundColor: '#93adb6',
+        height: 38.1,
+        width :99,
+        alignItems: 'center',
+        // justifyContent: 'center',
+        borderBottomLeftRadius: 100,
+        borderTopLeftRadius: 100,
+        color: 'black',
+        marginTop: '354%',
+        marginLeft: '-45%',
+        textAlign:'center',
+       
+        // fontSize: 20
+      }
     
   });
