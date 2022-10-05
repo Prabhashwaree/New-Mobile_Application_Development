@@ -8,8 +8,16 @@ export default function Login() {
   return (
     <View style={styles.container}>
         
-      <Text  style={{color: 'black', fontSize: 50,  marginTop: '-55%'}}> <b>Login</b></Text>
-      <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
+      <Text  style={{color: 'black', fontSize: 50,  position:'absolute',top:70}}> <b>Login</b></Text>
+      
+     
+  <View style={styles.cercle}></View>
+  <View style={styles.rectangle}></View>
+  <Image
+  source={require("../assets/car.png")}
+  style={{ width: 460, height: 460 ,position:'absolute',left:-60,top:70,rotate: '10deg'}}/>
+    
+    <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
       <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
       <TouchableOpacity style={styles.btn}>
         <Text style={{color: '#ffffff', fontSize: 20}}> Login</Text>
@@ -17,12 +25,6 @@ export default function Login() {
       <TouchableOpacity>
               <Text style={styles.signupText}>Sign Up</Text>
       </TouchableOpacity>
-     
-  <View style={styles.cercle}></View>
-  <View style={styles.rectangle}></View>
-  <Image
-  source={require("../assets/car.png")}
-  style={{ width: 400, height: 400 ,position:'absolute',left:10,top:120,rotate: '10deg'}}/>
     </View>
   );
 }
@@ -32,15 +34,23 @@ const styles = StyleSheet.create({
     marginTop: '30%',
     borderWidth: 1,
     padding: 10,
-    width: '80%',
+    width: '70%',
     borderRadius: 100,
+    zIndex:2,
+    backgroundColor:'#ffffff',
+    position:'absolute',
+    top:'36%',
   },
   input2: {
     marginTop: '5%',
     borderWidth: 1,
     padding: 10,
-    width: '80%',
+    width: '70%',
     borderRadius: 100,
+    zIndex:2,
+    backgroundColor:'#ffffff',
+    position:'absolute',
+    top:'55%',
   },
   container: {
     justifyContent: 'center',
@@ -59,6 +69,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: '10%',
     borderRadius: 100,
+    position:'absolute',
+    top:'55%',
   },
   signupText:{
     color: 'black',
