@@ -20,7 +20,7 @@ export default function Login() {
       <TextInput placeholderTextColor="black" style={styles.input6} placeholder="Location" />
       
       <TouchableOpacity style={styles.btn}>
-        <Text style={{color: '#ffffff', fontSize: 20}}> Save</Text>
+        <Text style={{color: '#ffffff', fontSize: 20}}> <b>Save</b></Text>
       </TouchableOpacity>
       <Text style={{color: '#ffffff'}}><b><i>rhrhaharnarherhrhbaehbeabae</i></b></Text>
       
@@ -40,10 +40,10 @@ const styles = StyleSheet.create({
     color: 'black', 
     fontSize: 30, 
     marginRight: '35%',
-    marginTop:'-60%',
+    marginTop:'-20%',
   },
   input:{
-    marginTop: '95%',
+    marginTop: '60%',
     marginLeft: '9%',
     borderWidth: 1,
     marginRight: '56%',
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     zIndex:2
   },
   input4:{
-    marginTop: '5%',
+    marginTop: '-12%',
     marginLeft: '96%',
     borderWidth: 1,
     marginRight: '56%',
@@ -110,14 +110,16 @@ const styles = StyleSheet.create({
   
   btn:{
     padding: 5,
-    backgroundColor: 'green',
-    height: 50,
+    backgroundColor: '#6e6e6e',
+    height: 40,
     marginRight:'40%',
-    width :200,
+    width :110,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '10%',
-    borderRadius: 100,
+    marginTop: '20%',
+    marginLeft: '-18%',
+    borderRadius: 15,
+   
   },
   VCercle:{
     width:'100%',
