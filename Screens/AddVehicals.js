@@ -33,6 +33,10 @@ export default function Login() {
     
       </TouchableOpacity>
       
+      <Image
+  source={require("../assets/car.png")}
+  style={{ width: 250, height: 250 ,position:'absolute',left:'20%',top:'28%'}}/>
+    
     </View>
   );
 }

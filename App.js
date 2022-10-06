@@ -3,14 +3,15 @@ import {Text,Link,HStack,Center,Heading, Switch,useColorMode,NativeBaseProvider,
 import Signup from './screens/Signup'
 import AddVehicals from './screens/AddVehicals'
 import Login from './screens/Login'
-
+import VehicalDetails from './screens/VehicalDetails'
 
 export default function App() {
   return (
     <NativeBaseProvider>
           {/* <Signup></Signup> */}
-          <AddVehicals></AddVehicals>
+          {/* <AddVehicals></AddVehicals> */}
           {/* <Login></Login> */}
+          <VehicalDetails></VehicalDetails>
     </NativeBaseProvider>
   );
 }
