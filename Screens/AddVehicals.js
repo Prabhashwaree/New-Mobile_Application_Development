@@ -40,10 +40,11 @@ const styles = StyleSheet.create({
     color: 'black', 
     fontSize: 30, 
     marginRight: '35%',
-    marginTop:'-20%',
+   position:'absolute',
+   top:'8%'
   },
   input:{
-    marginTop: '60%',
+    marginTop: '80%',
     marginLeft: '9%',
     borderWidth: 1,
     marginRight: '56%',
