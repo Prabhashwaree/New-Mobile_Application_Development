@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 // eslint-disable-next-line prettier/prettier
-import { View, Text,TextInput,Button,StyleSheet, TouchableOpacity,} from 'react-native';
+import { View, Text,TextInput,Button,StyleSheet, TouchableOpacity,Image,} from 'react-native';
 import React from 'react';
 
 
@@ -22,7 +22,16 @@ export default function Login() {
       <TouchableOpacity style={styles.btn}>
         <Text style={{color: '#ffffff', fontSize: 20}}> <b>Save</b></Text>
       </TouchableOpacity>
-      <Text style={{color: '#ffffff'}}><b><i>rhrhaharnarherhrhbaehbeabae</i></b></Text>
+      <Text style={{color: '#ffffff',zIndex:'2',position:'absolute',top:'16%',left:'7%',color:'black'}}>
+        <b><i>Enter Your Details and Register Your <br /> Vehicle Today.</i></b></Text>
+      <View style={styles.VCercle}></View>
+      <TouchableOpacity style={styles.camBtn}>
+        <Text style={{color: '#ffffff', fontSize: 20}}></Text>
+        <Image
+  source={require("../assets/cam.png")}
+  style={{ width: 50, height: 50 ,position:'absolute',left:'12%',top:'15%',rotate: '10deg'}}/>
+    
+      </TouchableOpacity>
       
     </View>
   );
@@ -122,6 +131,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
    
   },
+  
   VCercle:{
     width:'100%',
     height:'40%',
@@ -136,5 +146,19 @@ const styles = StyleSheet.create({
     backgroundColor:'#181718',
     position:'absolute',
     top:'40.5%',
-  }
+  },
+  camBtn:{
+    padding: 5,
+    backgroundColor: '#ffffff',
+    height: 60,
+    width :60,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position:'absolute',
+    top:'29%',
+    left:'65%',
+    borderRadius: 100,
+    
+  },
+
 });
