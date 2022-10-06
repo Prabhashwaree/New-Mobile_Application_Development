@@ -13,7 +13,7 @@ import {
     return (
       <View style={styles.container}>
                 
-                 <Text style={styles.VTopic}><b><i>Add Vehicals</i></b></Text>
+                 
 
       
       </View>
