@@ -4,7 +4,7 @@ import { View, Text,TextInput,Button,StyleSheet, TouchableOpacity,Image} from 'r
 import React from 'react';
 
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <View style={styles.container}>
         
