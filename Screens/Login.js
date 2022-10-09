@@ -20,10 +20,10 @@ export default function Login({navigation}) {
     <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
       <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
       <TouchableOpacity style={styles.btn}>
-        <Text style={{color: 'black'}}><b>Login</b></Text>
+        <Text  onPress={()=>{navigation.navigate("VehicalDetails")}} style={{color: 'black'}}><b>Login</b></Text>
       </TouchableOpacity>
       <TouchableOpacity>
-              <Text style={styles.signupbtn}><b>Sign Up</b></Text>
+              <Text onPress={()=>{navigation.navigate("Signup")}} style={styles.signupbtn}><b>Sign Up</b></Text>
       </TouchableOpacity>
     </View>
   );

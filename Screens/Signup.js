@@ -12,7 +12,7 @@ import {
 import React, { useState } from 'react';
 import UserService from "../service/singup";
 
-export default function Signup() {
+export default function Signup({ navigation }) {
 
   const [Username, setUsername] = new useState("");
   const [Password, setPassword] = new useState("");
@@ -69,7 +69,7 @@ export default function Signup() {
         <Text style={{ color: 'black' }}><b>Login</b></Text>
       </TouchableOpacity>
       <TouchableOpacity  onPress={submit} >
-        <Text style={styles.signupbtns}><b>Sign Up</b></Text>
+        <Text  onPress={() => {navigation.navigate("Login")}} style={styles.signupbtns}><b>Sign Up</b></Text>
       </TouchableOpacity>
 
       <Text style={{ color: '#ffffff', position: 'absolute', top: 520, textAlign: 'center' }}>
