@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 100,
     borderTopLeftRadius: 100,
     color: 'black',
-    marginTop: '341%',
+    marginTop: '342%',
     marginLeft: '-45%',
     textAlign:'center',
     // fontSize: 20

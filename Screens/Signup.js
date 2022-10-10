@@ -31,6 +31,9 @@ export default function Signup({ navigation }) {
   };
 
 
+  
+
+
   return (
     <View style={styles.container}>
       <Text style={{ color: '#f6c708', fontSize: 50, position: 'absolute', top: 100 }}> <b><i>Sign up</i></b></Text>
@@ -65,14 +68,12 @@ export default function Signup({ navigation }) {
         placeholder="Address"
       />
 
-      <TouchableOpacity style={styles.btn}>
-        <Text style={{ color: 'black' }}><b>Login</b></Text>
+      <TouchableOpacity onPress={submit} style={styles.btn}>
+        <Text  style={{ color: 'black' }}><b>Login</b></Text>
       </TouchableOpacity>
-      <TouchableOpacity  onPress={submit} >
-        <Text  onPress={() => {navigation.navigate("Login")}} style={styles.signupbtns}><b>Sign Up</b></Text>
-      </TouchableOpacity>
+     
 
-      <Text style={{ color: '#ffffff', position: 'absolute', top: 520, textAlign: 'center' }}>
+      <Text style={{ color: '#ffffff', position: 'absolute', top: 545, textAlign: 'center' }}>
         <b><i>Enter the Correct Information and <br />Create Your Account </i></b></Text>
 
     </View>
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#181718',
   },
   input1: {
-    marginTop: '50%',
+    marginTop: '-30%',
     borderWidth: 1,
     padding: 10,
     width: '80%',
@@ -119,16 +120,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: '#ffffff',
   },
-  btn: {
-    width: '80%',
-    padding: 5,
-    backgroundColor: 'green',
-    height: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: '10%',
-    borderRadius: 100,
-  },
+
   // cercle:{
   //     width:'100%',
   //     height:'100%',
@@ -153,30 +145,14 @@ const styles = StyleSheet.create({
     width: 239,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '20%',
+    marginTop: '60%',
     borderRadius: 100,
     position: 'absolute',
-    top: '56%',
+    top: '42%',
     left: '20%',
     color: 'black',
 
 
   },
-  signupbtns: {
-    padding: 8,
-    backgroundColor: '#93adb6',
-    height: 38.1,
-    width: 99,
-    alignItems: 'center',
-    // justifyContent: 'center',
-    borderBottomLeftRadius: 100,
-    borderTopLeftRadius: 100,
-    color: 'black',
-    marginTop: '354%',
-    marginLeft: '-45%',
-    textAlign: 'center',
-
-    // fontSize: 20
-  }
-
+  
 });
